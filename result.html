@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Result</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/p5.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="medias/logo.png" alt="Logo" class="logo">
+    </header>
+
+    <div class="container">
+        <h1>Your Test Result</h1>
+        <p id="resultText"></p>
+    </div>
+
+    <script>
+        // Get the score from sessionStorage
+        const score = sessionStorage.getItem('testScore');
+
+        // Display the score on the results page
+        const resultText = document.getElementById('resultText');
+        
+        // Analyze the score and provide detailed feedback
+        if (score > 400) {
+            resultText.innerHTML = `
+                <h2>Your Test Result</h2>
+                <p>Your total score is: ${score}</p>
+                <p>It seems like you may hold some strong beliefs that go beyond what most people would consider typical. These beliefs might be impacting your daily life, relationships, or how you perceive the world around you.</p>
+                <p>Sometimes, strong beliefs can feel empowering, but they can also lead to feeling isolated or misunderstood. You might interpret events or interactions in ways that others don’t seem to understand. This could make you feel different or disconnected from others.</p>
+                
+                <h3>Things to Consider</h3>
+                <ul>
+                    <li>Are these beliefs affecting your ability to function in your daily life?</li>
+                    <li>Do you feel that others are often skeptical or don’t understand what you believe?</li>
+                    <li>Are your beliefs causing distress, anxiety, or conflict in your relationships?</li>
+                </ul>
+                
+                <h3>Steps You Can Take</h3>
+                <p>If these beliefs are causing stress, it might be helpful to talk to someone. A mental health professional can provide a safe, non-judgmental space to explore these thoughts.</p>
+            `;
+        } else if (score > 300) {
+            resultText.innerHTML = `
+                <h2>CONGRATS : You are delulu</h2>
+                <p>Your total score is: ${score}</p>
+                <p>It appears that you may hold some beliefs that are moderately delusional. These beliefs may sometimes cause misunderstandings or challenges in your relationships and interactions.</p>
+                <p>While it’s okay to hold unique views, it’s important to reflect on whether these beliefs are affecting how you function day-to-day. Do you feel disconnected from others because of them? Do these thoughts cause you distress?</p>
+            `;
+        } else if (score > 200) {
+            resultText.innerHTML = `
+                <h2>Mid delulu</h2>
+                <p>Your total score is: ${score}</p>
+                <p>You may have some beliefs that are slightly unconventional, but they aren’t necessarily harmful. These unique perspectives can help you think outside the box, but it’s important to ensure they don’t cause you stress or anxiety in social situations.</p>
+            `;
+        } else {
+            resultText.innerHTML = `
+                <h2>Boring... not delulu</h2>
+                <p>Your total score is: ${score}</p>
+                <p>Your responses suggest that you have a balanced and grounded view of the world around you. It’s healthy to remain open-minded while also staying connected to reality.</p>
+                <p>You’re likely to handle life’s challenges without excessive worries about things that aren’t rooted in reality. This balanced perspective is helpful for maintaining good relationships and a strong sense of self.</p>
+                <p>If you ever feel uncertain about your thoughts or beliefs, remember that it’s always okay to reach out for support or talk to someone.</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: police1;
+    src: url(fonts/Montserrat-Bold.ttf);
+  
+    font-family: police2;
+    src: url(fonts/Montserrat-Medium.ttf);
+  }
+
+header {
+    text-align: left;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .logo {
+    max-width: 400px; /* Default size on small screens */
+    height: auto; /* Maintain aspect ratio */
+    width: 400px;
+}
+
+@media (min-width: 768px) {
+    header .logo {
+        max-width: 600px; /* Make the logo larger on bigger screens */
+    }
+}
+
+body {
+    background-color: #f285e0;
+    margin: 0;
+    padding: 0;
+    height: 200%;
+    overflow-x: hidden;
+    color: #004f33;
+    font-family: police2;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #004f33;
+    font-family: police2;
+    color: #f285e0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004f33;
+}
+
+
+/* Star container */
+.star-container {
+    position: fixed;
+    width: 50%;
+    height: 100%; /* Make the container full screen */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+/* Star style */
+.star {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+
+.star:before,
+.star:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f2d95c;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star:before {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.star:after {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+/* Rotation animations */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Star rotating when class is applied */
+.rotate {
+    animation: rotate 2s infinite linear;
+}
+

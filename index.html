@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delusional Test</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="lib/jquery-3.3.1.min.js"></script>
+        <script src="lib/p5.js"></script>
+        <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="medias/logo.png" alt="Logo" class="logo">
+    </header>
+
+    <div class="star-container">
+        <!-- Left Star -->
+        <div class="star left-star"></div>
+        
+        <!-- Right Star -->
+        <div class="star right-star"></div>
+    </div>
+
+
+    <div class="container">
+        <form id="testForm">
+            <div class="question">
+                <p>1. I believe that I have special powers that others do not have.</p>
+                <label>
+                    <input type="radio" name="q1" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>2. I often feel that others can read my thoughts.</p>
+                <label>
+                    <input type="radio" name="q2" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>3. I think that I have a special mission or purpose in life that others are unaware of.</p>
+                <label>
+                    <input type="radio" name="q3" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>4. I frequently suspect that people are plotting against me.</p>
+                <label>
+                    <input type="radio" name="q4" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>5. I feel that I am being watched or followed by unknown forces.</p>
+                <label>
+                    <input type="radio" name="q5" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>6. I believe that I can influence events just by thinking about them.</p>
+                <label>
+                    <input type="radio" name="q6" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>7. I think that I am destined for greatness.</p>
+                <label>
+                    <input type="radio" name="q7" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>8. I feel that I receive special messages through TV or radio.</p>
+                <label>
+                    <input type="radio" name="q8" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>9. I believe that I can communicate with spirits or other supernatural beings.</p>
+                <label>
+                    <input type="radio" name="q9" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>10. I think that I have a direct connection to a higher power.</p>
+                <label>
+                    <input type="radio" name="q10" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>11. I often feel that the world around me isn’t real.</p>
+                <label>
+                    <input type="radio" name="q11" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>12. I think that objects or people around me are not what they seem.</p>
+                <label>
+                    <input type="radio" name="q12" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>13. I believe that time moves differently for me than for others.</p>
+                <label>
+                    <input type="radio" name="q13" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q13" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q13" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q13" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q13" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>14. I think that the news or media is personally speaking to me.</p>
+                <label>
+                    <input type="radio" name="q14" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q14" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q14" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q14" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q14" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>15. I sometimes feel that I am living in a simulation.</p>
+                <label>
+                    <input type="radio" name="q15" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q15" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q15" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q15" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q15" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>16. I believe that certain people are secretly working against me.</p>
+                <label>
+                    <input type="radio" name="q16" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q16" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q16" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q16" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q16" value="1">
+                    Less Accurate
+                </label>
+            </div> 
+            <br>
+            <div class="question">
+                <p>17. I often see hidden messages in everyday objects.</p>
+                <label>
+                    <input type="radio" name="q17" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q17" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q17" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q17" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q17" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>18. I think that my thoughts can control the weather.</p>
+                <label>
+                    <input type="radio" name="q18" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q18" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q18" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q18" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q18" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>19. I believe that my dreams are more real than waking life.</p>
+                <label>
+                    <input type="radio" name="q19" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q19" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q19" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q19" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q19" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>20. I feel that I am living in a parallel universe.</p>
+                <label>
+                    <input type="radio" name="q20" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q20" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q20" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q20" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q20" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>21. I believe that I can control other people’s actions with my mind.</p>
+                <label>
+                    <input type="radio" name="q21" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q21" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q21" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q21" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q21" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>22. I think that I have been chosen for a special task by a higher power.</p>
+                <label>
+                    <input type="radio" name="q22" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q22" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q22" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q22" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q22" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>23. I often feel that my thoughts are being broadcast to others.</p>
+                <label>
+                    <input type="radio" name="q23" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q23" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q23" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q23" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q23" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>24. I believe that I can predict the future.</p>
+                <label>
+                    <input type="radio" name="q24" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q24" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q24" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q24" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q24" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>25. I think that I can heal others with my thoughts or touch.</p>
+                <label>
+                    <input type="radio" name="q25" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q25" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q25" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q25" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q25" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>26. I feel that I have a special connection to the universe that others do not have.</p>
+                <label>
+                    <input type="radio" name="q26" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q26" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q26" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q26" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q26" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>27. I believe that I can communicate telepathically with others.</p>
+                <label>
+                    <input type="radio" name="q27" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q27" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q27" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q27" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q27" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>28. I think that I can influence the outcomes of events just by willing them to happen.</p>
+                <label>
+                    <input type="radio" name="q28" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q28" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q28" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q28" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q28" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>29. I often feel that I have been given a secret mission by an unknown force.</p>
+                <label>
+                    <input type="radio" name="q29" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q29" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q29" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q29" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q29" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>30. I believe that I can sense things that others cannot.</p>
+                <label>
+                    <input type="radio" name="q30" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q30" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q30" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q30" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q30" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>31. I often think that people are talking about me behind my back.</p>
+                <label>
+                    <input type="radio" name="q31" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q31" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q31" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q31" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q31" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>32. I believe that strangers are paying special attention to me.</p>
+                <label>
+                    <input type="radio" name="q32" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q32" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q32" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q32" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q32" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>33. I feel that I am being watched by hidden cameras.</p>
+                <label>
+                    <input type="radio" name="q33" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q33" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q33" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q33" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q33" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>34. I think that people are trying to send me secret messages.</p>
+                <label>
+                    <input type="radio" name="q34" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q34" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q34" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q34" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q34" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>35. I believe that my thoughts are being controlled by external forces.</p>
+                <label>
+                    <input type="radio" name="q35" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q35" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q35" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q35" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q35" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>36. I often feel that others are trying to deceive me.</p>
+                <label>
+                    <input type="radio" name="q36" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q36" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q36" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q36" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q36" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>37. I think that I am the center of a large conspiracy.</p>
+                <label>
+                    <input type="radio" name="q37" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q37" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q37" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q37" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q37" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>38. I believe that others can hear my thoughts without me speaking.</p>
+                <label>
+                    <input type="radio" name="q38" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q38" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q38" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q38" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q38" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>39. I often feel that I am being manipulated by unseen forces.</p>
+                <label>
+                    <input type="radio" name="q39" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q39" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q39" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q39" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q39" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>40. I think that people are trying to test me or trap me in some way.</p>
+                <label>
+                    <input type="radio" name="q40" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q40" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q40" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q40" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q40" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>41. I believe that I have lived past lives.</p>
+                <label>
+                    <input type="radio" name="q41" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q41" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q41" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q41" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q41" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>42. I feel that I am not who I appear to be.</p>
+                <label>
+                    <input type="radio" name="q42" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q42" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q42" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q42" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q42" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>43. I often think that I have a hidden identity.</p>
+                <label>
+                    <input type="radio" name="q43" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q43" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q43" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q43" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q43" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>44. I believe that I am not entirely human.</p>
+                <label>
+                    <input type="radio" name="q44" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q44" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q44" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q44" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q44" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>45. I feel that I am being impersonated by someone else.</p>
+                <label>
+                    <input type="radio" name="q45" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q45" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q45" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q45" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q45" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>46. I think that I am part of a secret organization.</p>
+                <label>
+                    <input type="radio" name="q46" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q46" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q46" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q46" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q46" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>47. I believe that I have special knowledge that others do not.</p>
+                <label>
+                    <input type="radio" name="q47" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q47" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q47" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q47" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q47" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>48. I feel that I have been chosen for something important by a higher power.</p>
+                <label>
+                    <input type="radio" name="q48" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q48" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q48" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q48" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q48" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>49. I think that I have abilities that are beyond normal human capabilities.</p>
+                <label>
+                    <input type="radio" name="q49" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q49" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q49" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q49" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q49" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>50. I believe that my true identity is hidden from me.</p>
+                <label>
+                    <input type="radio" name="q50" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q50" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q50" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q50" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q50" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>51. I feel that my thoughts are being implanted by someone else.</p>
+                <label>
+                    <input type="radio" name="q51" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q51" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q51" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q51" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q51" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>52. I believe that my actions are being controlled by outside forces.</p>
+                <label>
+                    <input type="radio" name="q52" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q52" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q52" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q52" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q52" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>53. I think that someone or something is trying to influence my behavior.</p>
+                <label>
+                    <input type="radio" name="q53" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q53" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q53" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q53" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q53" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>54. I often feel that I am under surveillance.</p>
+                <label>
+                    <input type="radio" name="q54" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q54" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q54" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q54" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q54" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>55. I believe that technology is being used to control my mind.</p>
+                <label>
+                    <input type="radio" name="q55" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q55" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q55" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q55" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q55" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>56. I think that I am being targeted by powerful people.</p>
+                <label>
+                    <input type="radio" name="q56" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q56" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q56" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q56" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q56" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>57. I feel that my thoughts are being monitored by others.</p>
+                <label>
+                    <input type="radio" name="q57" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q57" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q57" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q57" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q57" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>58. I believe that someone is trying to control my dreams.</p>
+                <label>
+                    <input type="radio" name="q58" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q58" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q58" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q58" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q58" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>59. I think that my actions are being guided by a higher power.</p>
+                <label>
+                    <input type="radio" name="q59" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q59" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q59" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q59" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q59" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>60. I often feel that I am being watched by secret organizations.</p>
+                <label>
+                    <input type="radio" name="q60" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q60" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q60" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q60" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q60" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>61. I believe that I have seen or encountered supernatural beings.</p>
+                <label>
+                    <input type="radio" name="q61" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q61" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q61" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q61" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q61" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>62. I think that I can communicate with the dead.</p>
+                <label>
+                    <input type="radio" name="q62" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q62" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q62" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q62" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q62" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br> 
+            <div class="question">
+                <p>63. I feel that I am surrounded by invisible entities.</p>
+                <label>
+                    <input type="radio" name="q63" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q63" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q63" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q63" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q63" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>64. I believe that I have been abducted by aliens.</p>
+                <label>
+                    <input type="radio" name="q64" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q64" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q64" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q64" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q64" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>65. I think that I can see into other dimensions.</p>
+                <label>
+                    <input type="radio" name="q65" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q65" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q65" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q65" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q65" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>66. I feel that I have been visited by beings from another world.</p>
+                <label>
+                    <input type="radio" name="q66" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q66" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q66" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q66" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q66" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>67. I believe that I can control spirits or ghosts.</p>
+                <label>
+                    <input type="radio" name="q67" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q67" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q67" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q67" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q67" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>68. I often think that I am being protected by supernatural forces.</p>
+                <label>
+                    <input type="radio" name="q68" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q68" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q68" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q68" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q68" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>69. I believe that I have experienced time travel.</p>
+                <label>
+                    <input type="radio" name="q69" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q69" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q69" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q69" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q69" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>70. I feel that I am in contact with extraterrestrial beings.</p>
+                <label>
+                    <input type="radio" name="q70" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q70" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q70" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q70" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q70" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>71. I believe that I have been given special powers by an unknown force.</p>
+                <label>
+                    <input type="radio" name="q71" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q71" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q71" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q71" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q71" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>72. I think that I have seen things that others cannot see.</p>
+                <label>
+                    <input type="radio" name="q72" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q72" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q72" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q72" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q72" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>73. I often feel that I am in the presence of something otherworldly.</p>
+                <label>
+                    <input type="radio" name="q73" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q73" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q73" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q73" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q73" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>74. I believe that I have had encounters with beings from another dimension.</p>
+                <label>
+                    <input type="radio" name="q74" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q74" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q74" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q74" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q74" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>75.I think that I have been given secret knowledge that others do not have.</p>
+                <label>
+                    <input type="radio" name="q75" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q75" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q75" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q75" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q75" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>76. I feel that I can move objects with my mind.</p>
+                <label>
+                    <input type="radio" name="q76" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q76" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q76" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q76" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q76" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>77. I believe that I have been chosen to carry out a special mission.</p>
+                <label>
+                    <input type="radio" name="q77" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q77" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q77" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q77" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q77" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>78. I think that I can hear voices that others cannot hear.</p>
+                <label>
+                    <input type="radio" name="q78" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q78" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q78" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q78" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q78" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>79. I often feel that I am surrounded by energy fields.</p>
+                <label>
+                    <input type="radio" name="q79" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q79" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q79" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q79" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q79" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>80. I believe that I have experienced events that others would not believe.</p>
+                <label>
+                    <input type="radio" name="q80" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q80" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q80" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q80" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q80" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>81. I often think that coincidences have special meaning for me.</p>
+                <label>
+                    <input type="radio" name="q81" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q81" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q81" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q81" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q81" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>82. I believe that random events are connected to me personally.</p>
+                <label>
+                    <input type="radio" name="q82" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q82" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q82" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q82" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q82" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>83. I think that everyday occurrences are signs meant for me.</p>
+                <label>
+                    <input type="radio" name="q83" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q83" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q83" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q83" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q83" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>84. I feel that I am being given messages through ordinary objects.</p>
+                <label>
+                    <input type="radio" name="q84" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q84" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q84" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q84" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q84" value="1">
+                    Less Accurate
+                </label>
+            </div>  
+            <br>
+            <div class="question">
+                <p>85. I believe that certain numbers have a special significance for me.</p>
+                <label>
+                    <input type="radio" name="q85" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q85" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q85" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q85" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q85" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>86. I think that I can interpret hidden meanings in events.</p>
+                <label>
+                    <input type="radio" name="q86" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q86" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q86" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q86" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q86" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>87. I often feel that I am being given signs by a higher power.</p>
+                <label>
+                    <input type="radio" name="q87" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q87" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q87" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q87" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q87" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>88. I believe that certain patterns in nature are meant for me to understand.</p>
+                <label>
+                    <input type="radio" name="q88" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q88" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q88" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q88" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q88" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>89. I believe that certain patterns in nature are meant for me to understand.</p>
+                <label>
+                    <input type="radio" name="q89" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q89" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q89" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q89" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q89" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>90. I feel that the universe is trying to communicate with me.</p>
+                <label>
+                    <input type="radio" name="q90" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q90" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q90" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q90" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q90" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>91. I believe that I am more important than other people realize.</p>
+                <label>
+                    <input type="radio" name="q91" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q91" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q91" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q91" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q91" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>92. I think that I have a destiny that is greater than anyone else's.</p>
+                <label>
+                    <input type="radio" name="q92" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q92" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q92" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q92" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q92" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>93. I often feel that I am the key to solving a great mystery.</p>
+                <label>
+                    <input type="radio" name="q93" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q93" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q93" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q93" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q93" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>94. I believe that I am the only one who understands certain truths.</p>
+                <label>
+                    <input type="radio" name="q94" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q94" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q94" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q94" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q94" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>95. I think that I have a special role to play in the future of humanity.</p>
+                <label>
+                    <input type="radio" name="q95" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q95" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q95" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q95" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q95" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>96. I feel that I have been chosen for greatness by a higher power.</p>
+                <label>
+                    <input type="radio" name="q96" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q96" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q96" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q96" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q96" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>97. I believe that I am the only one who can see the truth.</p>
+                <label>
+                    <input type="radio" name="q97" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q97" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q97" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q97" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q97" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>98. I think that I have a special connection to historical figures.</p>
+                <label>
+                    <input type="radio" name="q98" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q98" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q98" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q98" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q98" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>99. I often feel that I am destined to change the world.</p>
+                <label>
+                    <input type="radio" name="q99" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q99" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q99" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q99" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q99" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>100. I believe that I am the only person who can save others.</p>
+                <label>
+                    <input type="radio" name="q100" value="5" required>
+                    More Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q100" value="4">
+                    Somewhat Accurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q100" value="3">
+                    Neutral
+                </label><br>
+                <label>
+                    <input type="radio" name="q100" value="2">
+                    Somewhat Inaccurate
+                </label><br>
+                <label>
+                    <input type="radio" name="q100" value="1">
+                    Less Accurate
+                </label>
+            </div>
+            <button type="submit"><a href="result.html"></a> Submit </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
